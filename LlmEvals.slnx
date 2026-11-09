@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/evals/">
+    <Project Path="evals/Worker/Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Support/Support.csproj" />
+  </Folder>
+</Solution>
