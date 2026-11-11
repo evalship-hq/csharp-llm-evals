@@ -2,6 +2,12 @@
   "version": 1,
   "dependencies": {
     "net10.0": {
+      "Tinyeval": {
+        "type": "Direct",
+        "requested": "[0.11.0, )",
+        "resolved": "0.11.0",
+        "contentHash": "IIgfe5MxSrPQFHqXeSNVv38VetdVgTa+JgpCxk80is8URYLCt2fhukS/TXQd1GAc1LCsBxH32edG6jPDRHlV4g=="
+      },
       "Anthropic": {
         "type": "Transitive",
         "resolved": "13.6.0",

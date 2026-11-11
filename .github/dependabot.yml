@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: nuget # the .csproj files and .config/dotnet-tools.json
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      tinyeval: # Tinyeval and Tinyeval.Tool release together, so they update in one pull request
+        patterns: ["tinyeval*"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

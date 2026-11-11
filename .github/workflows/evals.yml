@@ -15,8 +15,9 @@ jobs:
           global-json-file: global.json
           cache: true # caches NuGet packages, keyed on the lock files
           cache-dependency-path: "**/packages.lock.json"
+      - run: dotnet tool restore # the tinyeval command, from .config/dotnet-tools.json
       - run: dotnet build -c Release
-      - run: ./tinyeval -n 3
+      - run: dotnet tinyeval -n 3
         if: env.ANTHROPIC_API_KEY != ''
       - run: echo "::notice::Add the ANTHROPIC_API_KEY repository secret to run the evals."
         if: env.ANTHROPIC_API_KEY == ''
