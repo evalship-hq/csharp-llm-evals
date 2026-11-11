@@ -1,4 +1,4 @@
-# Evals for the support bot in src/Support/SupportBot.cs. Build once with dotnet build -c Release, then run ./tinyeval.
+# Evals for the support bot in src/Support/SupportBot.cs. Build once with dotnet build -c Release, then run dotnet tinyeval.
 # The worker starts the bot and its client once, and answers every test case sent to it.
 worker dotnet evals/Worker/bin/Release/net10.0/Worker.dll
 
